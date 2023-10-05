@@ -1,4 +1,4 @@
-package gameTypes;
+package gameType;
 
 public class RacingGame extends Game{
     @Override
