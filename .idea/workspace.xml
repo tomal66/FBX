@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c328ef-e7d5-4e01-9b07-dc505f82c8cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FBX.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameType/ActionGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameType/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameType/RacingGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameType/StrategyGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CheatCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CloudAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/GameInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/CheatCodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/CloudService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/GameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ScoreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/UXService.java" afterDir="false" />
+    <list default="true" id="e6c328ef-e7d5-4e01-9b07-dc505f82c8cb" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameType/ActionGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameType/ActionGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameType/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameType/RacingGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameType/RacingGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameType/StrategyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameType/StrategyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CheatCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CheatCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CloudAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CloudAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/GameInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/GameInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/CheatCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CheatCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/CloudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CloudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ScoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/UXService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/UXService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,7 +86,16 @@
       <option name="presentableId" value="Default" />
       <updated>1696418798737</updated>
       <workItem from="1696418799878" duration="2030000" />
+      <workItem from="1696509411034" duration="2559000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1696509648744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696509648744</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>

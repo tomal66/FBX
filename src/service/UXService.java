@@ -3,14 +3,15 @@ package service;
 import model.Player;
 
 public class UXService {
-    // Handle the login process
     public void handleLogin(String username, String password) {
-        System.out.println(username+" is logged in.");
+        System.out.println("Logging in");
     }
 
-    // Handle the logout process
-    public void handleLogout(Player player) {}
+    public void handleLogout(Player player) {
+        System.out.println("Logging out");
+    }
 
-    // Handle the sign-up process
-    public void handleSignUp(String username, String password) {}
+    public void handleSignUp(String username, String password) {
+        System.out.println("Signing up");
+    }
 }

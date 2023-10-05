@@ -1,8 +1,14 @@
 package gameType;
 
-public class RacingGame extends Game{
+import model.Game;
+
+public class RacingGame extends Game {
+    public RacingGame(String name) {
+        super(name);
+    }
+
     @Override
     public void play() {
-        // Implement the logic for playing a racing game
+        // Method logic for RacingGame
     }
 }

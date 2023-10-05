@@ -1,9 +1,5 @@
 
-import model.Player;
-import model.Team;
-import model.GameInfo;
-import model.CloudAccount;
-import model.CheatCode;
+import model.*;
 import service.ScoreService;
 import service.UXService;
 import service.CloudService;
@@ -14,45 +10,44 @@ import controller.GameController;
 
 public class Main {
     public static void main(String[] args) {
-        // Instances of model classes
-        Player player1 = new Player();
-        Team team1 = new Team();
-        GameInfo gameInfo1 = new GameInfo();
-        CloudAccount cloudAccount1 = new CloudAccount();
-        CheatCode cheatCode1 = new CheatCode();
+        // Create a new player
+        Player player = new Player("player1", "tomal66");
 
-        // Instances of service classes
+        // Instantiate services
         ScoreService scoreService = new ScoreService();
         UXService uxService = new UXService();
         CloudService cloudService = new CloudService();
         GameService gameService = new GameService();
         CheatCodeService cheatCodeService = new CheatCodeService();
 
-        // Instance of GameController
-        GameController gameController = new GameController();
+        // Instantiate the GameController with the services
+        GameController gameController = new GameController(scoreService, uxService, cloudService, gameService, cheatCodeService);
 
-        // Simulate operations
-        System.out.println("Simulating Login...");
-        uxService.handleLogin("username", "password");
+        // Player signs up and logs in using the controller
+        gameController.handleSignUp(player.getUsername(), "password123");
+        gameController.handleLogin(player.getUsername(), "password123");
 
-        System.out.println("Simulating Cloud Status Update...");
-        cloudService.updatePlayerStatus(player1, "Online");
+        // Create an instance of an action game and associate it with GameInfo
+        Game actionGameInstance = new ActionGame("Valorant");
+        GameInfo gameInfo = new GameInfo("game001", actionGameInstance);
 
-        System.out.println("Simulating Score Calculation...");
-        scoreService.calculateSinglePlayerScore(player1);
+        // Start the game using the controller
+        gameController.startGame(gameInfo);
 
-        System.out.println("Simulating Game Start...");
-        gameService.startGame(gameInfo1);
+        // Calculate player's score using the controller
+        gameController.calculateScore(player);
 
-        System.out.println("Simulating Cheat Code Activation...");
-        cheatCodeService.activateCheatCode(player1, "GOD_MODE");
+        // Update player's status in the cloud using the controller
+        gameController.updateCloudStatus(player, "Online");
 
-        System.out.println("Simulating Game Play...");
-        ActionGame actionGame = new ActionGame();
-        actionGame.play();
+        // Player uses a cheat code using the controller
+        gameController.activateCheatCode(player, "Aimbot");
 
-        System.out.println("Simulating Game End...");
-        gameService.endGame(gameInfo1);
+        // End the game using the controller
+        gameController.endGame(gameInfo);
+
+        // Player logs out using the controller
+        gameController.handleLogout(player);
 
         System.out.println("Demo completed!");
     }

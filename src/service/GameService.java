@@ -3,9 +3,11 @@ package service;
 import model.GameInfo;
 
 public class GameService {
-    // Start a new game
-    public void startGame(GameInfo gameInfo) {}
+    public void startGame(GameInfo gameInfo) {
+        System.out.println("Started running "+gameInfo.getGame().getName());
+    }
 
-    // End the current game
-    public void endGame(GameInfo gameInfo) {}
+    public void endGame(GameInfo gameInfo) {
+        System.out.println("Stopped running "+gameInfo.getGame().getName());
+    }
 }

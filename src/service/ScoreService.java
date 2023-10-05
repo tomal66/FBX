@@ -4,9 +4,11 @@ import model.Player;
 import model.Team;
 
 public class ScoreService {
-    // Calculate the score for a single player
-    public void calculateSinglePlayerScore(Player player) {}
+    public void calculateSinglePlayerScore(Player player) {
+        System.out.println("Setting score for "+player.getUsername());
+    }
 
-    // Calculate the score for a team
-    public void calculateTeamScore(Team team) {}
+    public void calculateTeamScore(Team team) {
+        System.out.println("Calculating team score");
+    }
 }
